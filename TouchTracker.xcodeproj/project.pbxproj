@@ -14,6 +14,9 @@
 		AA2364FA1B1FA853001714F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2364F91B1FA853001714F1 /* Images.xcassets */; };
 		AA2364FD1B1FA853001714F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2364FB1B1FA853001714F1 /* LaunchScreen.xib */; };
 		AA2365091B1FA853001714F1 /* TouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2365081B1FA853001714F1 /* TouchTrackerTests.m */; };
+		AA2365141B1FA86F001714F1 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2365131B1FA86F001714F1 /* BNRLine.m */; };
+		AA2365181B1FA970001714F1 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2365171B1FA970001714F1 /* BNRDrawView.m */; };
+		AA23651C1B1FA9DA001714F1 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23651B1B1FA9DA001714F1 /* BNRDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		AA2365021B1FA853001714F1 /* TouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2365071B1FA853001714F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2365081B1FA853001714F1 /* TouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerTests.m; sourceTree = "<group>"; };
+		AA2365121B1FA86F001714F1 /* BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLine.h; sourceTree = "<group>"; };
+		AA2365131B1FA86F001714F1 /* BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLine.m; sourceTree = "<group>"; };
+		AA2365161B1FA970001714F1 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		AA2365171B1FA970001714F1 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		AA23651A1B1FA9DA001714F1 /* BNRDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		AA23651B1B1FA9DA001714F1 /* BNRDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		AA2364EB1B1FA853001714F1 /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
+				AA2365191B1FA9C7001714F1 /* controllers */,
+				AA2365151B1FA941001714F1 /* models */,
 				AA2364F01B1FA853001714F1 /* AppDelegate.h */,
 				AA2364F11B1FA853001714F1 /* AppDelegate.m */,
 				AA2364F31B1FA853001714F1 /* ViewController.h */,
@@ -117,6 +128,26 @@
 				AA2365071B1FA853001714F1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA2365151B1FA941001714F1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AA2365121B1FA86F001714F1 /* BNRLine.h */,
+				AA2365131B1FA86F001714F1 /* BNRLine.m */,
+				AA2365161B1FA970001714F1 /* BNRDrawView.h */,
+				AA2365171B1FA970001714F1 /* BNRDrawView.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		AA2365191B1FA9C7001714F1 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA23651A1B1FA9DA001714F1 /* BNRDrawViewController.h */,
+				AA23651B1B1FA9DA001714F1 /* BNRDrawViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2365181B1FA970001714F1 /* BNRDrawView.m in Sources */,
+				AA23651C1B1FA9DA001714F1 /* BNRDrawViewController.m in Sources */,
 				AA2364F51B1FA853001714F1 /* ViewController.m in Sources */,
 				AA2364F21B1FA853001714F1 /* AppDelegate.m in Sources */,
+				AA2365141B1FA86F001714F1 /* BNRLine.m in Sources */,
 				AA2364EF1B1FA853001714F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
